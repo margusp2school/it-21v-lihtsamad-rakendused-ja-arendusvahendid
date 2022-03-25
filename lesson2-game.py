@@ -1,3 +1,22 @@
+import random
+
+def try_next_move():
+    if random.random() < 0.25:
+        print("try to go right")
+
+    elif random.random() < 0.5:
+        print("try to go left")    
+
+    elif random.random() < 0.75:
+        print("try to go bottom")        
+
+    elif random.random() < 1:
+        print("try to go top")        
+
+try_next_move()
+try_next_move()
+try_next_move()
+
 map1 = [
     [12, 0, 1, 0],
     [1, 0, 1, 0],
