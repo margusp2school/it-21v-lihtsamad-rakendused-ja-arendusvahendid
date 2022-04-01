@@ -33,6 +33,7 @@ with mp_hands.Hands(
       for hand_landmarks in results.multi_hand_landmarks:
         print(hand_landmarks)
         
+        # please see https://google.github.io/mediapipe/solutions/hands for landmark cordinates
         center_coordinates = (
             int(hand_landmarks.landmark[8].x * image_width), 
             int(hand_landmarks.landmark[8].y * image_height)
